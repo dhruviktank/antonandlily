@@ -1,0 +1,272 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/0785082ccd.js" crossorigin="anonymous"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="menubar">
+        <button class="btn1">Book a Room</button>
+        <a onclick="closeMenu()" id="menu" class="menu"><img src="Menu.png" alt=""></a>
+    </div>
+    <section id="navmenu" class="navmenu">
+        <div class="navbar">
+            <a onclick="openMenu()" id="close" class="close"><img src="Close.png" alt=""></a>
+            <ul class="navlinks"> 
+                <li><a href="#home">HOME</a></li>
+                <li><a href="#about">ABOUT</a></li>
+                <li><a href="#tools">ROOM</a></li>
+                <li><a href="">SERVICES</a></li>
+                <li><a href="">GALLERY</a></li>
+                <li><a href="">SEE & DO</a></li>
+                <li><a href="">CONTACT</a></li>
+                <li><button>Book a Room</button></li>
+            </ul>
+        </div>
+    </section>
+    <section id="home" class="header">
+        <h1>ANTON & LILY</h1>
+        <h4><i>-- Bed & Breakfast--</i></h4>
+        <div class="image">
+        </div>
+        <div class="form1">
+            <li class="date">
+                <label for="Check in">Check in</label>
+                <input type="date" name="" id="">
+            </li>
+            <li class="date">
+                <label for="Check out">Check out</label>
+                <input type="date" name="" id="">
+            </li>
+            <li class="range">
+                <label for="Adults">Adults</label>
+                <input type="number" min="1" max="100" name="" id="">
+            </li>
+            <li class="range">
+                <label for="Kids">Kids</label>
+                <input type="number" min="1" max="100" name="" id="">
+            </li>
+            <li class="searchbtn">
+                <button>SEARCH</button>
+            </li>
+        </div>
+        <div id="#about" class="about">
+            <h1>ABOUT</h1>
+            <p>
+                I'm a paragraph. Click here to add your own text and edit me. It’s easy. Just click<br>“Edit Text” or double click me to add your own content and make changes to the <br> font. Feel free to drag and drop me anywhere you like on your page. I’m a great <br> place for you to tell a story and let your users know a little more about you.
+            </p>
+        </div>
+    </section>
+    <section id="tools" class="tools">
+        <div class="rooms">
+            <h1>OUR ROOMS</h1>
+            <p>I'm a paragraph. Click here to add your <br>own text and edit me. I’m a great place <br>for you to tell a story and let your users <br>know a little more about you.</p>
+            <button>Book a Room</button>
+        </div>
+    </section>
+    <section class="service">
+        <h1>OUR SERVICES</h1>
+        <div class="service1">
+            <div class="servlogo">
+                <img src="images/breakfast.png" alt="">
+                <h3>breakfast</h3>
+                <p>I'm a paragraph. Click here to add <br>your own text and edit me.</p>
+            </div>
+            <div class="servlogo">
+                <img src="images/garden.png" alt="">
+                <h3>Garden</h3>
+                <p>I'm a paragraph. Click here to add <br>your own text and edit me.</p>
+            </div>
+            <div class="servlogo">
+                <img src="images/pool.png" alt="">
+                <h3>Pool</h3>
+                <p>I'm a paragraph. Click here to add <br>your own text and edit me.</p>
+            </div>
+        </div>
+        <div class="service1">
+            <div class="servlogo">
+                <img src="images/wifi.png" alt="">
+                <h3>Free Wifi</h3>
+                <p>I'm a paragraph. Click here to add <br>your own text and edit me.</p>
+            </div>
+            <div class="servlogo">
+                <img src="images/housekeeping.png" alt="">
+                <h3>Daily Housekeeping</h3>
+                <p>I'm a paragraph. Click here to add <br>your own text and edit me.</p>
+            </div>
+            <div class="servlogo">
+                <img src="images/dinning.png" alt="">
+                <h3>In-Room Dining Service</h3>
+                <p>I'm a paragraph. Click here to add <br>your own text and edit me.</p>
+            </div>
+        </div>
+    </section>
+    <section class="slider">
+        <div class="imageslider">
+            <div class="myslides">
+                <div class="text">LANDSCAPE1</div>
+                <img src="image1 (1).jpg" alt="" srcset="">
+            </div>
+            <div class="myslides">
+                <div class="text">LANDSCAPE2</div>
+                <img src="image1 (2).jpg" alt="" srcset="">
+            </div>
+            <div class="myslides">
+                <div class="text">LANDSCAPE3</div>
+                <img src="image1 (3).jpg" alt="" srcset="">
+            </div>
+            <div class="myslides">
+                <div class="text">LANDSCAPE4</div>
+                <img src="image1 (4).jpg" alt="" srcset="">
+            </div>
+            <div class="dots">
+                <img onclick="currentSlides(1)" class="dot" src="dot.png" alt="">
+                <img onclick="currentSlides(2)" class="dot" src="dot.png" alt="">
+                <img onclick="currentSlides(3)" class="dot" src="dot.png" alt="">
+                <img onclick="currentSlides(4)" class="dot" src="dot.png" alt="">
+            </div>
+            <a onclick="plusSlides(-1)" class="prev"><img src="Back.png" alt=""></a>
+            <a onclick="plusSlides(1)" class="next"><img src="Forward.png" alt=""></a>
+        </div>
+    </section>
+    <section class="things">
+        <h1>Things to do</h1>
+        <div class="Things1">
+            <div class="servlogo">
+                <h3>Wineries Tours</h3>
+                <p>I'm a paragraph. Click here to add <br>your own text and edit me.</p>
+            </div>
+            <div class="servlogo">
+                <h3>Cultural Sites</h3>
+                <p>I'm a paragraph. Click here to add <br>your own text and edit me.</p>
+            </div>
+            <div class="servlogo">
+                <h3>Market Tour</h3>
+                <p>I'm a paragraph. Click here to add <br>your own text and edit me.</p>
+            </div>
+        </div>
+        <div class="Things2">
+            <div class="servlogo">
+                <h3>Leisure Activity</h3>
+                <p>I'm a paragraph. Click here to add <br>your own text and edit me.</p>
+            </div>
+            <div class="servlogo">
+                <h3>Birds Safari</h3>
+                <p>I'm a paragraph. Click here to add <br>your own text and edit me.</p>
+            </div>
+            <div class="servlogo">
+                <h3>Horse Riding</h3>
+                <p>I'm a paragraph. Click here to add <br>your own text and edit me.</p>
+            </div>
+        </div>
+    </section>
+    <section class="review">
+        <div class="guestreview">
+            <div class="reviewbox">
+                <h1>GUEST REVIEW</h1>
+                <img src="quoteleft.png" alt="">
+                <p>I'm a testimonial. Click to edit me and <br>
+                    add text that says something nice about <br>
+                    you and your services.</p>
+            </div>
+        </div>
+    </section>
+    <section class="contactus">
+        <div class="contactheading">
+            <h1>CONTACT US</h1>
+        </div>
+        <div class="contactdetails">
+            <p><span>info@mysite.com</span>&emsp;&emsp;<span>/</span>&emsp;&emsp;&emsp;<span>500 Terry Francois Street, San Francisco, CA 94158</span>&emsp;&emsp;&emsp;<span>/</span>&emsp;&emsp;<span>Tel: 123-456-7890 </span></p>
+        </div>
+        <div class="formcontainer">
+        <form action="">
+            <div class="form">
+                <div class="nameemail">
+                    <div class="name">
+                        <label for="Name">Enter Your Name</label><br>
+                        <input style="height: 30px; border: none;" type="text" name="name" placeholder="name" id="">
+                    </div>
+                    <div class="email">
+                        <label for="Email">Enter Your Email</label><br>
+                        <input style="height: 30px; border: none;" type="email" name="email" placeholder="email" id="">
+                    </div>
+                </div>
+                <div class="subject">
+                    <label for="subject">Enter Your Subject</label><br>
+                    <input style="height: 30px; border: none;" type="text" name="subject" placeholder="subject" id="">
+                </div>
+                <div class="message">
+                    <label for="message">Enter Your Message</label><br>
+                    <textarea style="border: none;" name="message" id="" placeholder="message" cols="5" rows="10"></textarea>
+                </div>
+                <div class="submitbtn">
+                    <input style="height: 30px; color: white; background-color: black;" type="submit" value="Submit">
+                </div>
+            </div>
+        </form>
+        </div>
+    </section>
+    <section class="map">
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d97002.29867563353!2d-105.21117944095995!3d40.556569643918884!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x87694bac07dc0b9f%3A0x43edbdfac2002772!2sGardens%20on%20Spring%20Creek!5e0!3m2!1sen!2sin!4v1660848132444!5m2!1sen!2sin" width="100%" height="600" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+    </section>
+    <section class="rights">
+        © 2023 by Anton & Lily. Proudly created with <a href=""> Wix.com </a>
+    </section>
+    <script>
+        let slideIndex = 1;
+        showSlides(slideIndex);
+        function plusSlides(n) {
+            showSlides(slideIndex+=n);
+        }
+        function currentSlides(n) {
+            showSlides(slideIndex=n);
+        }
+        function showSlides(n) {
+            var i;
+            var slides = document.getElementsByClassName("myslides");
+            var dots = document.getElementsByClassName("dot");
+            if(n>slides.length) {
+                slideIndex = 1;
+            }
+            if(n<1){
+                slideIndex = slides.length;
+            }
+            for(i=0;i<slides.length;i++) {
+                slides[i].style.display = "none";
+            }
+            for(i=0;i<dots.length;i++) {
+                dots[i].setAttribute("src","dot.png");
+            }
+            slides[slideIndex-1].style.display = "block";
+            dots[slideIndex-1].setAttribute("src","dotactive.png");
+
+        }
+        function closeMenu() {
+            var body = document.querySelector("body");
+            var closebtn = document.getElementById("close");
+            var menubtn = document.getElementById("menu");
+            var navmenu = document.getElementById("navmenu");
+            navmenu.style.top = 0;
+            menubtn.style.display = "none";
+            closebtn.style.display = "block";
+            body.style.overflow = "hidden";
+        }
+        function openMenu() {
+            var body = document.querySelector("body");
+            var closebtn = document.getElementById("close");
+            var menubtn = document.getElementById("menu");
+            var navmenu = document.getElementById("navmenu");
+            navmenu.style.top = -1000;
+            menubtn.style.display = "block";
+            closebtn.style.display = "none";
+            body.style.overflow = "auto"
+        }
+    </script>
+</body>
+</html>
